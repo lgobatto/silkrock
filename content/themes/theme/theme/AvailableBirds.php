@@ -184,7 +184,7 @@ class AvailableBirds extends RegisterPostType {
 				print( '</div>' );
 				$count ++;
 			}
-			if ( $limit > 0 ):
+			if ( $limit > 0 && ! is_front_page() ):
 				?>
                 <div class="text-center">
                     <a href="/filhotes" class="button warning large">Ver todos!</a>
