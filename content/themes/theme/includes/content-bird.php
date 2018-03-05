@@ -66,29 +66,36 @@ $translate['readmore']   = mfn_opts_get( 'translate' ) ? mfn_opts_get( 'translat
 $images                  = get_field( 'bird_photo_gallery' );
 ?>
 <?php if ( $images ): ?>
-    <div id="rev_slider_9_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="birds" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-        <!-- START REVOLUTION SLIDER 5.4.5.2 fullwidth mode -->
-        <div id="rev_slider_9_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.5.2">
-            <ul>    <!-- SLIDE  -->
-				<?php
-				$counter = 0;
-				if ( $images ) {
-					foreach ( $images as $image ) {
-						?>
-                        <li data-index="rs-<?php echo $counter + 26; ?>" data-transition="slideoverhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="<?php echo $image['url']; ?>" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="<?php echo $image['url']; ?>" alt="" title="<?php echo $image['title']; ?>" width="1920" height="1275" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-                        </li>
-						<?php
-						$counter ++;
+    <div class="themebg">
+        <div class="spacer-32"></div>
+        <div id="rev_slider_10_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="birdscarousel" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <!-- START REVOLUTION SLIDER 5.4.5.2 fullwidth mode -->
+            <div id="rev_slider_10_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.6">
+                <ul>    <!-- SLIDE  -->
+					<?php
+					$counter = 0;
+					if ( $images ) {
+						foreach ( $images as $image ) {
+							$title = $image['title'];
+							$thumb = wp_get_attachment_image_src( $image['ID'], [ 100, 50 ] )[0];
+							$file  = $image['url'];
+							?>
+                            <li data-index="rs-<?php echo $counter + 26; ?>" data-transition="grayscalecross" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="<?php echo $thumb; ?>" data-rotate="0" data-saveperformance="off" data-title="<?php echo $title ?>" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="<?php echo get_template_directory_uri() ?>/dist/images/logo-white.png" alt="" title="<?php echo $title ?>" width="1920" height="1080" data-lazyload="<?php echo $file; ?>" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+                            </li>
+							<?php
+							$counter ++;
+						}
 					}
-				}
-				?>
-            </ul>
-            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+					?>
+                </ul>
+                <div class="tp-bannertimer" style="height: 5px; background: rgba(0,0,0,0.15);"></div>
+            </div>
         </div>
-    </div><!-- END REVOLUTION SLIDER -->
+        <div class="spacer-32"></div>
+    </div>
 <?php endif; ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( $classes ); ?>>
 
@@ -101,8 +108,6 @@ $images                  = get_field( 'bird_photo_gallery' );
 	?>
     <div class="themebg-white">
         <div class="spacer-70"></div>
-        <h2 class="text-center fs-60"><?php the_title(); ?></h2>
-        <div class="spacer-20"></div>
         <div class="row">
 			<?php
 			/**
@@ -129,6 +134,8 @@ $images                  = get_field( 'bird_photo_gallery' );
 				?>
             </div>
             <div class="small-12 medium-7 columns">
+                <h2 class="fs-60"><?php the_title(); ?></h2>
+                <div class="spacer-20"></div>
 				<?php if ( $scientific_name ): ?>
                     <h3>Nome Científico:
                         <small><?php echo $scientific_name; ?></small>
@@ -139,7 +146,7 @@ $images                  = get_field( 'bird_photo_gallery' );
                         <small><?php echo $group->name; ?></small>
                     </h3>
 				<?php endif; ?>
-				<?php if ( $pet_potential ): ?>
+				<?php if ( $pet_potential && false ): ?>
                     <h3>Potencial Pet:
                         <span class="pet-potential themecolor-yellow" data-amount="<?php echo $pet_potential / 20; ?>"></span>
                     </h3>
@@ -169,12 +176,18 @@ $images                  = get_field( 'bird_photo_gallery' );
                         <small><?php echo $habitat; ?></small>
                     </h3>
 				<?php endif; ?>
+                <h2 class="fs-50">Introdução à espécie</h2>
+				<?php echo apply_filters( 'the_content', $description ); ?>
             </div>
         </div>
         <div class="spacer-70"></div>
-		<?php separator_row( '#f6f6f6' ); ?>
+		<?php if ( \SilkRock\Caresheet::has_sheets( get_the_ID() ) ): ?>
+			<?php separator_row( '#ffffff' ); ?>
+		<?php else: ?>
+			<?php separator_row( '#61A6D6' ); ?>
+		<?php endif; ?>
     </div>
-    <div style="background-color: #f6f6f6">
+    <div style="background-color: #f6f6f6; display: none;">
         <div class="spacer-70"></div>
         <h2 class="fs-60 text-center">Introdução à espécie</h2>
         <div class="spacer-50"></div>
@@ -217,7 +230,13 @@ $images                  = get_field( 'bird_photo_gallery' );
 				]
 			]
 		] );
-		if ( $related->have_posts() ) {
+		$total   = 0;
+		foreach ( $related->posts as $p ) {
+			if ( get_field( 'mutation_gallery', $p->ID ) ) {
+				$total ++;
+			}
+		}
+		if ( $related->have_posts() && $total ) {
 			print( '<div class="row small-up-1 medium-up-3 align-center"  data-equalizer data-equalize-by-row="true" data-equalize-on="medium">' );
 			while ( $related->have_posts() ) {
 				$related->the_post();
