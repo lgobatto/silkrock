@@ -108,7 +108,7 @@ $images                  = get_field( 'bird_photo_gallery' );
 	?>
     <div class="themebg-white">
         <div class="spacer-70"></div>
-        <div class="row">
+        <div class="row align-middle">
 			<?php
 			/**
 			 * @var $group WP_Term
