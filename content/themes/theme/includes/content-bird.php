@@ -82,7 +82,7 @@ $images                  = get_field( 'bird_photo_gallery' );
 							?>
                             <li data-index="rs-<?php echo $counter + 26; ?>" data-transition="grayscalecross" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="<?php echo $thumb; ?>" data-rotate="0" data-saveperformance="off" data-title="<?php echo $title ?>" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="/content/themes/theme/dist/images/logo-white.png" alt="" title="<?php echo $title ?>" width="1920" height="1080" data-lazyload="<?php echo $file; ?>" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                                <img src="/content/themes/theme/dist/images/logo-white.png" alt="" title="<?php echo $title ?>" width="1920" height="1080" data-lazyload="<?php echo $file; ?>" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
                             </li>
 							<?php
