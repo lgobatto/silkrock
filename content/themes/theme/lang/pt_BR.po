@@ -1,0 +1,309 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme v2.0.0\n"
+"POT-Creation-Date: 2017-08-28 21:44-0300\n"
+"PO-Revision-Date: 2017-08-28 21:59-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/Post.php:92
+#, php-format
+msgctxt "Post Type General Name"
+msgid "%2$s"
+msgstr "%2$s"
+
+#: lib/Post.php:93
+#, php-format
+msgctxt "Post Type Singular Name"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: lib/Post.php:94 lib/Post.php:95
+#, php-format
+msgid "%2$s"
+msgstr "%2$s"
+
+#: lib/Post.php:96
+#, php-format
+msgid "%1$s Archives"
+msgstr "%1$s Arquivos"
+
+#: lib/Post.php:97
+#, php-format
+msgid "%1$s Attributes"
+msgstr "%1$s Atributos"
+
+#: lib/Post.php:98 lib/Taxonomy.php:106
+#, php-format
+msgid "Parent %1$s:"
+msgstr "Pai de %1$s:"
+
+#: lib/Post.php:99 lib/Taxonomy.php:104
+#, php-format
+msgid "All %2$s"
+msgstr "Todas %2$s"
+
+#: lib/Post.php:100 lib/Taxonomy.php:108
+#, php-format
+msgid "Add New %1$s"
+msgstr "Adicionar Novo %1$s"
+
+#: lib/Post.php:101
+msgid "Add New"
+msgstr "Adicionar novo"
+
+#: lib/Post.php:102
+#, php-format
+msgid "New %1$s"
+msgstr "Novo %1$s"
+
+#: lib/Post.php:103 lib/Taxonomy.php:109
+#, php-format
+msgid "Edit %1$s"
+msgstr "Editar %1$s"
+
+#: lib/Post.php:104 lib/Taxonomy.php:110
+#, php-format
+msgid "Update %1$s"
+msgstr "Atualizar %1$s"
+
+#: lib/Post.php:105 lib/Taxonomy.php:111
+#, php-format
+msgid "View %1$s"
+msgstr "Ver %1$s"
+
+#: lib/Post.php:106
+#, php-format
+msgid "View %2$s"
+msgstr "Ver %2$s"
+
+#: lib/Post.php:107
+#, php-format
+msgid "Search %1$s"
+msgstr "Pesquisar %1$s"
+
+#: lib/Post.php:108
+#, php-format
+msgid "%1$s not found"
+msgstr "%1$s não encontrado"
+
+#: lib/Post.php:109
+msgid "Not found in Trash"
+msgstr "Nada  encontrado na lixeira"
+
+#: lib/Post.php:110
+#, php-format
+msgid "Featured %3$s Image"
+msgstr "Imagem para o %3$s"
+
+#: lib/Post.php:111
+#, php-format
+msgid "Set %3$s featured image"
+msgstr "Definir %3$s Imagem Destacada"
+
+#: lib/Post.php:112
+#, php-format
+msgid "Remove %3$s featured image"
+msgstr "Remover %3$s Imagem Destacada"
+
+#: lib/Post.php:113
+#, php-format
+msgid "Use as %3$s featured image"
+msgstr "Use como %3$s Imagem Destacada"
+
+#: lib/Post.php:114
+#, php-format
+msgid "Insert into %3$s"
+msgstr "Inserir %3$s"
+
+#: lib/Post.php:115
+#, php-format
+msgid "Uploaded to this %3$s"
+msgstr "Enviados para este %3$s"
+
+#: lib/Post.php:116 lib/Taxonomy.php:119
+#, php-format
+msgid "%2$s list"
+msgstr "%2$s"
+
+#: lib/Post.php:117
+#, php-format
+msgid "%1$s list navigation"
+msgstr "navegação de lista %1$s"
+
+#: lib/Post.php:118
+#, php-format
+msgid "Filter %4$s list"
+msgstr "Filtrar lista de %4$s"
+
+#: lib/Taxonomy.php:101
+#, php-format
+msgctxt "Taxonomy General Name"
+msgid "%2$s"
+msgstr "%2$s"
+
+#: lib/Taxonomy.php:102
+#, php-format
+msgctxt "Taxonomy Singular Name"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: lib/Taxonomy.php:103
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: lib/Taxonomy.php:105
+#, php-format
+msgid "Parent %1$s"
+msgstr "Nome do pai %1$s"
+
+#: lib/Taxonomy.php:107
+#, php-format
+msgid "New %1$s Name"
+msgstr "Novo %1$s Nome"
+
+#: lib/Taxonomy.php:112
+#, php-format
+msgid "Separate %4$s with commas"
+msgstr "Separar %4$s com vírgulas"
+
+#: lib/Taxonomy.php:113
+#, php-format
+msgid "Add or remove %4$s"
+msgstr "Adicionar ou remover %4$s"
+
+#: lib/Taxonomy.php:114
+#, php-format
+msgid "Choose from the most used %4$s"
+msgstr "Escolha entre as %4$s mais utilizadas"
+
+#: lib/Taxonomy.php:115
+#, php-format
+msgid "Popular %2$s"
+msgstr "Popular %2$s"
+
+#: lib/Taxonomy.php:116
+#, php-format
+msgid "Search %2$s"
+msgstr "Pesquisar %2$s"
+
+#: lib/Taxonomy.php:117
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+#: lib/Taxonomy.php:118
+#, php-format
+msgid "No %4$s"
+msgstr "Nenhum %4$s"
+
+#: lib/Taxonomy.php:120
+#, php-format
+msgid "%2$s list navigation"
+msgstr "navegação de lista %2$s"
+
+#: lib/ThemeSetup.php:115
+msgid "Default Sidebar"
+msgstr "Sidebar Padrão"
+
+#: theme/AvailableBirds.php:21
+msgid "Available Bird"
+msgstr "Ave disponível"
+
+#: theme/AvailableBirds.php:21
+msgid "Available Birds"
+msgstr "Aves disponíveis"
+
+#: theme/AvailableBirds.php:22 theme/AvailableBirds.php:26
+msgid "baby-birds"
+msgstr "filhotes"
+
+#: theme/BirdMutations.php:22
+msgid "Mutation"
+msgstr "Mutação"
+
+#: theme/BirdMutations.php:22
+msgid "Mutations"
+msgstr "Mutações"
+
+#: theme/BirdMutations.php:23 theme/BirdMutations.php:29
+msgid "bird-mutations"
+msgstr "mutacoes"
+
+#: theme/BirdMutations.php:31 theme/Birds.php:30
+msgid "Group"
+msgstr "Grupo"
+
+#: theme/BirdMutations.php:31 theme/Birds.php:30
+msgid "Groups"
+msgstr "Grupos"
+
+#: theme/Birds.php:23
+msgid "bird"
+msgstr "ave"
+
+#: theme/Birds.php:23
+msgid "Bird"
+msgstr "Ave"
+
+#: theme/Birds.php:23
+msgid "Birds"
+msgstr "Aves"
+
+#: theme/Birds.php:24 theme/Birds.php:29
+msgid "birds"
+msgstr "aves"
+
+#: theme/Birds.php:30
+msgid "groups"
+msgstr "grupos"
+
+#: theme/Caresheet.php:23 theme/Caresheet.php:27
+msgid "caresheets"
+msgstr "caresheets"
+
+#: theme/GeneticResults.php:22
+msgid "Genetic Result"
+msgstr "Resultado Genético"
+
+#: theme/GeneticResults.php:22
+msgid "Genetic Results"
+msgstr "Resultados Genéticos"
+
+#: theme/GeneticResults.php:24
+msgid "Genotype"
+msgstr "Genótipo"
+
+#. Theme Name of the plugin/theme
+msgid "Silkrock Wordpress Theme"
+msgstr "SilkRock Wordpress Tema"
+
+#. Theme URI of the plugin/theme
+msgid "http://silkrock.com.br"
+msgstr "http://silkrock.com.br"
+
+#. Description of the plugin/theme
+msgid "Silkrock Impact Website"
+msgstr "Silkrock Website"
+
+#. Author of the plugin/theme
+msgid "Leonardo Gobatto"
+msgstr "Leonardo Gobatto"
+
+#. Author URI of the plugin/theme
+msgid "http://lgobatto.com.br"
+msgstr "http://lgobatto.com.br"

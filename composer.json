@@ -1,0 +1,27 @@
+{
+  "name": "lgobatto/silkrock-new",
+  "description": "Silkrock Website Development",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonardo Gobatto",
+      "email": "lgobatto@lgobatto.eti.br"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "johnpbloch/wordpress": "4.9.4",
+    "imagecow/imagecow": "^2.2"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+    "wordpress-install-dir": "app"
+  }
+}
