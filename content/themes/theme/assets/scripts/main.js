@@ -36,27 +36,27 @@
     };
 
     var revapi10,
-        tpj=jQuery;
+        tpj = jQuery;
 
-    tpj(document).ready(function() {
-        if(tpj("#rev_slider_10_1").revolution == undefined){
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_10_1").revolution == undefined) {
             revslider_showDoubleJqueryError("#rev_slider_10_1");
-        }else{
+        } else {
             revapi10 = tpj("#rev_slider_10_1").show().revolution({
-                sliderType:"carousel",
-                jsFileLocation:"content/plugins/revslider/public/assets/js/",
-                sliderLayout:"fullwidth",
-                dottedOverlay:"none",
-                delay:6000,
+                sliderType: "carousel",
+                jsFileLocation: "//" + window.location.hostname + "/content/plugins/revslider/public/assets/js/",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 6000,
                 navigation: {
-                    keyboardNavigation:"off",
+                    keyboardNavigation: "off",
                     keyboard_direction: "horizontal",
-                    mouseScrollNavigation:"off",
-                    mouseScrollReverse:"default",
-                    onHoverStop:"off",
-                    touch:{
-                        touchenabled:"on",
-                        touchOnDesktop:"off",
+                    mouseScrollNavigation: "off",
+                    mouseScrollReverse: "default",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        touchOnDesktop: "off",
                         swipe_threshold: 75,
                         swipe_min_touches: 50,
                         swipe_direction: "horizontal",
@@ -64,22 +64,22 @@
                     }
                     ,
                     arrows: {
-                        style:"hesperiden",
-                        enable:true,
-                        hide_onmobile:false,
-                        hide_onleave:false,
-                        tmp:'',
+                        style: "hesperiden",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_onleave: false,
+                        tmp: '',
                         left: {
-                            h_align:"left",
-                            v_align:"center",
-                            h_offset:30,
-                            v_offset:0
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
                         },
                         right: {
-                            h_align:"right",
-                            v_align:"center",
-                            h_offset:30,
-                            v_offset:0
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
                         }
                     }
                 },
@@ -100,40 +100,39 @@
                     easing: "Power3.easeInOut",
                     speed: "800"
                 },
-                visibilityLevels:[1240,1024,778,480],
-                gridwidth:800,
-                gridheight:450,
-                lazyType:"smart",
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: 800,
+                gridheight: 450,
+                lazyType: "smart",
                 parallax: {
-                    type:"mouse",
-                    origo:"slidercenter",
-                    speed:2000,
-                    speedbg:0,
-                    speedls:0,
-                    levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+                    type: "mouse",
+                    origo: "slidercenter",
+                    speed: 2000,
+                    speedbg: 0,
+                    speedls: 0,
+                    levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 47, 48, 49, 50, 51, 55],
                 },
-                shadow:0,
-                spinner:"off",
-                stopLoop:"on",
-                stopAfterLoops:0,
-                stopAtSlide:1,
-                shuffle:"off",
-                autoHeight:"off",
-                hideThumbsOnMobile:"off",
-                hideSliderAtLimit:0,
-                hideCaptionAtLimit:0,
-                hideAllCaptionAtLilmit:0,
-                debugMode:false,
+                shadow: 0,
+                spinner: "off",
+                stopLoop: "on",
+                stopAfterLoops: 0,
+                stopAtSlide: 1,
+                shuffle: "off",
+                autoHeight: "off",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
                 fallbacks: {
-                    simplifyAll:"off",
-                    nextSlideOnWindowFocus:"off",
-                    disableFocusListener:false,
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
                 }
             });
         }
 
     });
-
     var $bird_species = $('.bird-species.isotope').imagesLoaded(function () {
         $bird_species.isotope({
             itemSelector: '.bird',
